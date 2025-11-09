@@ -1,0 +1,538 @@
+{
+    "maquinarios": [
+        {
+            "id": 1,
+            "nome": "Trator Massey Ferguson 4283 4x4",
+            "descricao": "Trator agrícola robusto com tração nas quatro rodas, ideal para pequenas e médias propriedades. Alta durabilidade e baixo consumo de combustível.",
+            "especificacoes": {
+                "potencia": "85 cv",
+                "motor": "AGCO Power 4.4L",
+                "transmissao": "12 marchas à frente e 4 à ré",
+                "peso": "3.950 kg",
+                "combustivel": "Diesel"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 175.000,00",
+            "imagens": [
+                "/imagesMaquinarios/TratorMassey.png"
+            ],
+            "categoria": "maquinarios"
+        },
+        {
+            "id": 2,
+            "nome": "Trator John Deere 5075E",
+            "descricao": "Trator versátil para agricultura de precisão, com cabine confortável e tecnologia de ponta para produtividade.",
+            "especificacoes": {
+                "potencia": "75 cv",
+                "motor": "John Deere PowerTech 3.0L",
+                "transmissao": "12x12",
+                "peso": "3.700 kg",
+                "combustivel": "Diesel"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 150.000",
+            "imagens": [
+                "/imagesMaquinarios/TratorJohn.png"
+            ],
+            "categoria": "maquinarios"
+        },
+        {
+            "id": 3,
+            "nome": "Colheitadeira New Holland TC5.90",
+            "descricao": "Colheitadeira eficiente para grandes lavouras, com baixo consumo de combustível e alta capacidade de colheita.",
+            "especificacoes": {
+                "potencia": "180 cv",
+                "motor": "FPT Cursor 6",
+                "transmissao": "Hidroestática",
+                "peso": "6.200 kg",
+                "combustivel": "Diesel"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 350.000",
+            "imagens": [
+                "/imagesMaquinarios/ColheitadeiraHolland.png"
+            ],
+            "categoria": "maquinarios"
+        },
+        {
+            "id": 4,
+            "nome": "Trator Valtra A750",
+            "descricao": "Trator potente com excelente desempenho em terrenos difíceis, indicado para atividades agrícolas e de transporte.",
+            "especificacoes": {
+                "potencia": "75 cv",
+                "motor": "Valtra 3.3L",
+                "transmissao": "12x12",
+                "peso": "3.600 kg",
+                "combustivel": "Diesel"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 145.000",
+            "imagens": [
+                "/imagesMaquinarios/TratorValtra.png"
+            ],
+            "categoria": "maquinarios"
+        },
+        {
+            "id": 5,
+            "nome": "Trator John Deere 6115M",
+            "descricao": "Trator de médio porte com tecnologia avançada para plantio e colheita, confortável e eficiente.",
+            "especificacoes": {
+                "potencia": "115 cv",
+                "motor": "John Deere 4.5L",
+                "transmissao": "16x16 Powershift",
+                "peso": "4.800 kg",
+                "combustivel": "Diesel"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 220.000",
+            "imagens": [
+                "/imagesMaquinarios/TratorJohn6115M.png"
+            ],
+            "categoria": "maquinarios"
+        },
+        {
+            "id": 6,
+            "nome": "Trator Case IH Farmall 75C",
+            "descricao": "Ideal para pequenas e médias propriedades, possui alta durabilidade e eficiência no consumo de combustível.",
+            "especificacoes": {
+                "potencia": "75 cv",
+                "motor": "FPT 3.4L",
+                "transmissao": "12x12",
+                "peso": "3.500 kg",
+                "combustivel": "Diesel"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 140.000",
+            "imagens": [
+                "/imagesMaquinarios/TratorFarmall75C.png"
+            ],
+            "categoria": "maquinarios"
+        },
+        {
+            "id": 7,
+            "nome": "Trator New Holland TT4.75",
+            "descricao": "Trator compacto, ideal para pequenos produtores e atividades agrícolas diversificadas.",
+            "especificacoes": {
+                "potencia": "75 cv",
+                "motor": "FPT 3.3L",
+                "transmissao": "12x12",
+                "peso": "3.400 kg",
+                "combustivel": "Diesel"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 135.000",
+            "imagens": [
+                "/imagesMaquinarios/TratorHollandTT4.75.png"
+            ],
+            "categoria": "maquinarios"
+        },
+        {
+            "id": 8,
+            "nome": "Trator Massey Ferguson 6713",
+            "descricao": "Trator robusto com alta performance, ideal para grandes propriedades e aplicações pesadas.",
+            "especificacoes": {
+                "potencia": "130 cv",
+                "motor": "AGCO Power 4.8L",
+                "transmissao": "24x24 Powershift",
+                "peso": "5.200 kg",
+                "combustivel": "Diesel"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 280.000",
+            "imagens": [
+                "/imagesMaquinarios/TratorMasseyFerguson6713.png"
+            ],
+            "categoria": "maquinarios"
+        }
+    ],
+    "implementos": [
+        {
+            "id": 1,
+            "nome": "Arado John Deere 3x",
+            "descricao": "Arado robusto para preparo de solo, adequado para diferentes tipos de terrenos.",
+            "especificacoes": {
+                "largura": "2,5 m",
+                "peso": "500 kg",
+                "material": "Aço carbono",
+                "compatibilidade": "Tratores 75 cv ou mais"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 20.000",
+            "imagens": [
+                "/imagesImplementos/AradoJohnDeere.png"
+            ],
+            "categoria": "implementos"
+        },
+        {
+            "id": 2,
+            "nome": "Grade New Holland 5x",
+            "descricao": "Grade niveladora para preparo de solo, eficiente e durável.",
+            "especificacoes": {
+                "largura": "3,0 m",
+                "peso": "600 kg",
+                "material": "Aço carbono",
+                "compatibilidade": "Tratores 80 cv ou mais"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 15.000",
+            "imagens": [
+                "/imagesImplementos/GradeNewHolland.png"
+            ],
+            "categoria": "implementos"
+        },
+        {
+            "id": 3,
+            "nome": "Semeadeira Massey Ferguson",
+            "descricao": "Semeadeira de alta precisão, indicada para plantio de grãos em larga escala.",
+            "especificacoes": {
+                "capacidade": "500 kg",
+                "linhas": 16,
+                "peso": "800 kg",
+                "material": "Aço reforçado"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 35.000",
+            "imagens": [
+                "/imagesImplementos/SemeadeiraMassey.png"
+            ],
+            "categoria": "implementos"
+        },
+        {
+            "id": 4,
+            "nome": "Pulverizador John Deere 3030",
+            "descricao": "Pulverizador de alta performance, ideal para defensivos agrícolas em grandes áreas.",
+            "especificacoes": {
+                "capacidade": "3.000 L",
+                "alcance": "18 m",
+                "peso": "1.500 kg",
+                "material": "Aço carbono"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 50.000",
+            "imagens": [
+                "/imagesImplementos/PulverizadorJohnDeereM4030.png"
+            ],
+            "categoria": "implementos"
+        },
+        {
+            "id": 5,
+            "nome": "Arado Case IH",
+            "descricao": "Arado eficiente e resistente, ideal para preparo de solo pesado.",
+            "especificacoes": {
+                "largura": "2,8 m",
+                "peso": "550 kg",
+                "material": "Aço reforçado",
+                "compatibilidade": "Tratores 75 cv ou mais"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 22.000",
+            "imagens": [
+                "/imagesImplementos/AradoCaseIH.png"
+            ],
+            "categoria": "implementos"
+        },
+        {
+            "id": 6,
+            "nome": "Grade rotativa New Holland",
+            "descricao": "Grade rotativa para solos compactados, garante melhor revolvimento e nivelamento.",
+            "especificacoes": {
+                "largura": "2,5 m",
+                "peso": "650 kg",
+                "material": "Aço carbono",
+                "compatibilidade": "Tratores 90 cv ou mais"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 18.000",
+            "imagens": [
+                "/imagesImplementos/GradeRotativa.png"
+            ],
+            "categoria": "implementos"
+        },
+        {
+            "id": 7,
+            "nome": "Semeadeira Case IH",
+            "descricao": "Semeadeira de precisão, com regulagem fácil e alta produtividade.",
+            "especificacoes": {
+                "capacidade": "450 kg",
+                "linhas": 14,
+                "peso": "750 kg",
+                "material": "Aço carbono"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 33.000",
+            "imagens": [
+                "/imagesImplementos/SemeadeiraCaseIH.png"
+            ],
+            "categoria": "implementos"
+        },
+        {
+            "id": 8,
+            "nome": "Pulverizador Massey Ferguson",
+            "descricao": "Pulverizador de alta performance para grandes áreas, fácil manutenção.",
+            "especificacoes": {
+                "capacidade": "2.500 L",
+                "alcance": "16 m",
+                "peso": "1.400 kg",
+                "material": "Aço reforçado"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 48.000",
+            "imagens": [
+                "/imagesImplementos/PulverizadorMasseyFerguson.png"
+            ],
+            "categoria": "implementos"
+        }
+    ],
+    "insumos": [
+        {
+            "id": 1,
+            "nome": "Mosaic MAP 11-52",
+            "descricao": "Fertilizante fosfatado de alta solubilidade, ideal para o desenvolvimento radicular.",
+            "especificacoes": {
+                "peso": "50 kg",
+                "composicao": "Fósforo (P₂O₅) 52%, Nitrogênio (N) 11%",
+                "validade": "24 meses",
+                "origem": "Brasil"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 280",
+            "imagens": [
+                "/imagesInsumos/MosaicMAP11-52.png"
+            ],
+            "categoria": "insumos"
+        },
+        {
+            "id": 2,
+            "nome": "Mosaic MicroEssentials SZ",
+            "descricao": "Fertilizante granulado com enxofre e zinco, liberação eficiente de nutrientes.",
+            "especificacoes": {
+                "peso": "50 kg",
+                "composicao": "N 12%, P₂O₅ 40%, S 5%, Zn 1%",
+                "validade": "24 meses",
+                "origem": "Brasil"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 320",
+            "imagens": [
+                "/imagesInsumos/MosaicMicroEssentialsSZ.png"
+            ],
+            "categoria": "insumos"
+        },
+        {
+            "id": 3,
+            "nome": "Mosaic K-Mag",
+            "descricao": "Fonte natural de potássio, magnésio e enxofre. Produto 100% solúvel e de liberação controlada.",
+            "especificacoes": {
+                "peso": "50 kg",
+                "composicao": "K₂O 22%, Mg 11%, S 22%",
+                "validade": "36 meses",
+                "origem": "EUA"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 350",
+            "imagens": [
+                "/imagesInsumos/MosaicK-Mag.png"
+            ],
+            "categoria": "insumos"
+        },
+        {
+            "id": 4,
+            "nome": "Mosaic Aspire",
+            "descricao": "Adubo com boro e potássio em um único grânulo, melhora a produtividade e qualidade dos grãos.",
+            "especificacoes": {
+                "peso": "50 kg",
+                "composicao": "K₂O 38%, B 0,5%",
+                "validade": "36 meses",
+                "origem": "Brasil"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 370",
+            "imagens": [
+                "/imagesInsumos/MosaicAspire.png"
+            ],
+            "categoria": "insumos"
+        },
+        {
+            "id": 5,
+            "nome": "Mosaic MicroEssentials S15",
+            "descricao": "Fertilizante fosfatado premium com enxofre elementar e sulfato de amônio.",
+            "especificacoes": {
+                "peso": "50 kg",
+                "composicao": "N 13%, P₂O₅ 40%, S 15%",
+                "validade": "24 meses",
+                "origem": "Brasil"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 310",
+            "imagens": [
+                "/imagesInsumos/MosaicMicroEssentialsS15.png"
+            ],
+            "categoria": "insumos"
+        },
+        {
+            "id": 6,
+            "nome": "Mosaic MicroEssentials SZ+",
+            "descricao": "Fertilizante de alto desempenho com enxofre e zinco, garantindo melhor absorção e produtividade das plantas.",
+            "especificacoes": {
+                "peso": "50 kg",
+                "composicao": "N 12%, P₂O₅ 40%, S 5%, Zn 1%",
+                "validade": "24 meses",
+                "origem": "Brasil"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 330",
+            "imagens": [
+                "/imagesInsumos/MicroEssentialsSZ.png"
+            ],
+            "categoria": "insumos"
+        },
+        {
+            "id": 7,
+            "nome": "Mosaic FTE BR12",
+            "descricao": "Fertilizante micronutriente com boro, cobre, ferro, manganês, molibdênio e zinco.",
+            "especificacoes": {
+                "peso": "25 kg",
+                "composicao": "B 1,8%, Cu 0,8%, Fe 3%, Mn 2%, Mo 0,1%, Zn 9%",
+                "validade": "36 meses",
+                "origem": "Brasil"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 260",
+            "imagens": [
+                "/imagesInsumos/MosaicFTEBR12.png"
+            ],
+            "categoria": "insumos"
+        },
+        {
+            "id": 8,
+            "nome": "Mosaic Polysulphate",
+            "descricao": "Fonte natural de enxofre, potássio, cálcio e magnésio. Fertilizante multi-nutriente de liberação lenta.",
+            "especificacoes": {
+                "peso": "50 kg",
+                "composicao": "S 48%, K₂O 14%, Ca 17%, Mg 6%",
+                "validade": "36 meses",
+                "origem": "Reino Unido"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 340",
+            "imagens": [
+                "/imagesInsumos/MosaicPolysulphate.png"
+            ],
+            "categoria": "insumos"
+        }
+    ],
+    "promocoesDaSemana": [
+        {
+            "id": 1,
+            "nome": "Trator Massey Ferguson 4283 4x4",
+            "desconto": "10%",
+            "precoOriginal": "Sob consulta",
+            "precoPromocional": "Sob consulta",
+            "imagens": [
+                "/images/trator-massey-1.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Grade New Holland 5x",
+            "desconto": "15%",
+            "precoOriginal": "R$ 15.000",
+            "precoPromocional": "R$ 12.750",
+            "imagens": [
+                "/images/grade-nh1.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Semente de Soja BRS 101",
+            "desconto": "20%",
+            "precoOriginal": "R$ 500",
+            "precoPromocional": "R$ 400",
+            "imagens": [
+                "/images/semente-soja1.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "Pulverizador Massey Ferguson",
+            "desconto": "10%",
+            "precoOriginal": "R$ 48.000",
+            "precoPromocional": "R$ 43.200",
+            "imagens": [
+                "/images/pulverizador-mf1.jpg"
+            ]
+        }
+    ],
+    "produtosDestaque": [
+        {
+            "id": 1,
+            "nome": "Trator Massey Ferguson 4283 4x4",
+            "descricao": "Trator agrícola robusto com tração nas quatro rodas, ideal para pequenas e médias propriedades. Alta durabilidade e baixo consumo de combustível.",
+            "especificacoes": {
+                "potencia": "85 cv",
+                "motor": "AGCO Power 4.4L",
+                "transmissao": "12 marchas à frente e 4 à ré",
+                "peso": "3.950 kg",
+                "combustivel": "Diesel"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 175.000,00",
+            "imagens": [
+                "/ProdutosDestaque/TratorMasseyFerguson6713.png"
+            ],
+            "categoria": "maquinarios"
+        },
+        {
+            "id": 2,
+            "nome": "Trator John Deere 5075E",
+            "descricao": "Trator versátil para agricultura de precisão, com cabine confortável e tecnologia de ponta para produtividade.",
+            "especificacoes": {
+                "potencia": "75 cv",
+                "motor": "John Deere PowerTech 3.0L",
+                "transmissao": "12x12",
+                "peso": "3.700 kg",
+                "combustivel": "Diesel"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 150.000",
+            "imagens": [
+                "/ProdutosDestaque/TratorJohn.png"
+            ],
+            "categoria": "maquinarios"
+        },
+        {
+            "id": 3,
+            "nome": "Semeadeira Massey Ferguson",
+            "descricao": "Semeadeira de alta precisão, indicada para plantio de grãos em larga escala.",
+            "especificacoes": {
+                "capacidade": "500 kg",
+                "linhas": 16,
+                "peso": "800 kg",
+                "material": "Aço reforçado"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 35.000",
+            "imagens": [
+                "/ProdutosDestaque/SemeadeiraMassey.png"
+            ],
+            "categoria": "implementos"
+        },
+        {
+            "id": 4,
+            "nome": "Mosaic Aspire",
+            "descricao": "Adubo com boro e potássio em um único grânulo, melhora a produtividade e qualidade dos grãos.",
+            "especificacoes": {
+                "peso": "50 kg",
+                "composicao": "K₂O 38%, B 0,5%",
+                "validade": "36 meses",
+                "origem": "Brasil"
+            },
+            "condicao": "Novo",
+            "preco": "R$ 370",
+            "imagens": [
+                "/imagesInsumos/MosaicAspire.png"
+            ],
+            "categoria": "insumos"
+        }
+    ]
+}
