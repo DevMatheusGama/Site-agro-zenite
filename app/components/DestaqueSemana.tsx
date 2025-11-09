@@ -20,7 +20,7 @@ export default function DestaqueSemana() {
     useEffect(() => {
         async function fetchProdutos() {
             try {
-                const response = await axios.get<ProdutosType[]>('http://localhost:3001/produtosDestaque')
+                const response = await axios.get<ProdutosType[]>('https://agro-zenite-api-1.onrender.com/produtosDestaque')
                 const data = response.data
                 setProdutos(data)
                 console.log(data)
