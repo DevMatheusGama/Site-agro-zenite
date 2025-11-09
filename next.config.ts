@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["localhost"], // domínio permitido
+    domains: ['site-agro-zenite.vercel.app', 'agro-zenite-api-1.onrender.com'],
   },
 };
 

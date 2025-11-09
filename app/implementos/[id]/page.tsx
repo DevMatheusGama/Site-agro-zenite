@@ -26,7 +26,7 @@ export default function page() {
     useEffect(() => {
         async function fetchProduto() {
             try {
-                const response = await axios.get<ProdutoType>(`http://localhost:3001/implementos/${id}`)
+                const response = await axios.get<ProdutoType>(`https://agro-zenite-api-1.onrender.com/implementos/${id}`)
                 const data = response.data
                 setProduto(data)
             } catch (error) {
