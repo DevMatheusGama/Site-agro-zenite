@@ -1,10 +1,6 @@
-'use client'
-
 import GridContainer from "@/app/components/GridContainer"
-import axios from "axios"
+import VoltarButton from "@/app/components/VoltarButton"
 import Image from "next/image"
-import { useParams, useRouter } from "next/navigation"
-import { useEffect, useState } from "react"
 import { FaWhatsapp } from "react-icons/fa"
 
 type ProdutoType = {
@@ -18,34 +14,48 @@ type ProdutoType = {
     especificacoes: Record<string, string | number>
 }
 
-export default function Page() {
-    const [produto, setProduto] = useState<ProdutoType | null>(null)
-    const { id } = useParams()
-    const router = useRouter()
+type Props = {
+    params: { id: string }
+}
 
-    useEffect(() => {
-        async function fetchProduto() {
-            try {
-                const response = await axios.get<ProdutoType>(`https://agro-zenite-api-1.onrender.com/insumos/${id}`)
-                const data = response.data
-                setProduto(data)
-            } catch (error) {
-                console.error("Erro ao buscar produto:", error);
-            }
-        }
-        if (id) fetchProduto();
-    }, [id])
+export async function generateStaticParams() {
+    const res = await fetch("https://agro-zenite-api-1.onrender.com/insumos")
 
-    if (!produto) {
-        return <p className="text-center mt-20 text-gray-500 text-lg">Carregando produto...</p>;
+    if (!res.ok) return []
+
+    const insumos = await res.json()
+
+    return insumos.map((item: any) => ({
+        id: item.id.toString()
+    }))
+}
+
+export const revalidate = 60
+
+export default async function Page({ params }: Props) {
+    const resolveParams = await params
+
+    const res = await fetch(`https://agro-zenite-api-1.onrender.com/insumos/${resolveParams.id}`)
+
+    if (!res.ok) {
+        return (
+            <GridContainer className="py-16">
+                <p className="text-center text-red-600 text-xl">
+                    Produto não encontrado.
+                </p>
+            </GridContainer>
+        )
     }
+
+    const produto = await res.json()
+
     return (
         <GridContainer className="py-16">
             <div className="flex flex-col lg:flex-row gap-10 bg-white shadow-md rounded-2xl p-6 md:p-10">
 
                 <div className="flex-1 flex justify-center items-center">
                     <Image
-                        src={produto.imagens[0]}
+                        src={produto.imagens?.[0]}
                         alt={produto.nome}
                         width={600}
                         height={450}
@@ -88,23 +98,24 @@ export default function Page() {
                                 faça seu pedido pelo WhatsApp <FaWhatsapp size={28} />
                             </a>
                         </div>
-                        <button onClick={() => router.back()} className="border border-gray-400 hover:bg-gray-100 text-gray-800 px-6 py-3 rounded-xl font-semibold transition shadow-lg">
-                            Voltar
-                        </button>
+                        <VoltarButton />
                     </div>
                 </div>
             </div>
-
             <div className="mt-16 bg-gray-50 p-6 md:p-10 rounded-2xl shadow-inner">
-                <h2 className="text-2xl font-bold mb-6 text-gray-900">Especificações Técnicas</h2>
+                <h2 className="text-2xl font-bold mb-6 text-gray-900">
+                    Especificações Técnicas
+                </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     {Object.entries(produto.especificacoes).map(([chave, valor]) => (
                         <div
                             key={chave}
                             className="bg-white p-4 rounded-lg border shadow-sm hover:shadow-md transition"
                         >
-                            <p className="text-gray-500 text-sm capitalize">{chave}</p>
-                            <p className="text-gray-900 font-semibold mt-1">{valor}</p>
+                            <p className="text-gray-500 text-sm capitalize">
+                                {chave.replace(/_/g, " ")}
+                            </p>
+                            <p className="text-gray-900 font-semibold mt-1">{String(valor)}</p>
                         </div>
                     ))}
                 </div>

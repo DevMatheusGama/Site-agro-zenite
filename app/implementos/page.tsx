@@ -20,8 +20,8 @@ export default function page() {
     useEffect(() => {
         async function fetchProdutos() {
             try {
-                const response = await axios.get<ProdutosType[]>("https://agro-zenite-api-1.onrender.com/implementos")
-                const data = response.data
+                const response = await fetch("https://agro-zenite-api-1.onrender.com/implementos")
+                const data = await response.json()
                 setProdutos(data)
                 console.log(data)
             } catch (error) {
