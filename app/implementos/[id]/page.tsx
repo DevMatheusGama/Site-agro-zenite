@@ -91,7 +91,7 @@ export default async function Page({ params }: Props) {
                     <div className="mt-10 flex flex-col sm:flex-row gap-4">
                         <a
                             href={`https://api.whatsapp.com/send?phone=5574991004879&text=Olá,%20Agro%20Zênite!%0A%0ATenho%20interesse%20no%20produto:%20${encodeURIComponent(
-                                `Olá, Agro Zênite!\n\nTenho interesse no produto: ${produto.nome}\n\nVeja o produto aqui:\nhttps://site-agro-zenite.vercel.app/implementos/${produto.id}`
+                                `${produto.nome}\n\nVeja o produto aqui:\nhttps://site-agro-zenite.vercel.app/implementos/${produto.id}`
                             )}`}
                             target="_blank"
                             rel="noopener noreferrer"
