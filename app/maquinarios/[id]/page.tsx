@@ -91,12 +91,14 @@ export default async function page({ params }: Props) {
                     <div className="mt-10 flex flex-col sm:flex-row gap-4">
                         <div>
                             <a
-                                href="https://api.whatsapp.com/send?phone=5574991004879&text=Ol%C3%A1%2C%20Agro%20Z%C3%AAnite!%20%F0%9F%9A%9C%F0%9F%8C%B1%0A%0ACheguei%20at%C3%A9%20voc%C3%AAs%20atrav%C3%A9s%20do%20link%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os.%20Meu%20interesse%20principal%20%C3%A9%3A%0A%0A1.%20%20Implementos%20e%20Maquin%C3%A1rios%20(Tratores%2C%20colheitadeiras%2C%20etc.)%0A2.%20%20Insumos%20Agr%C3%ADcolas%20(Fertilizantes%2C%20sementes%2C%20defensivos%2C%20etc.)%0A3.%20%20Outro%20assunto%0A%0APor%20favor%2C%20me%20ajudem%20a%20encontrar%20o%20que%20preciso!%0A%0A"
+                                href={`https://api.whatsapp.com/send?phone=5574999493112&text=Olá,%20Agro%20Zênite!%0A%0ATenho%20interesse%20no%20produto:%20${encodeURIComponent(
+                                    `${produto.nome}\n\nVeja o produto aqui:\nhttps://site-agro-zenite.vercel.app/maquinarios/${produto.id}`
+                                )}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex gap-4 bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold shadow-lg transition cursor-pointer"
                             >
-                                faça seu pedido pelo WhatsApp <FaWhatsapp size={28} />
+                                Faça seu pedido pelo WhatsApp <FaWhatsapp size={28} />
                             </a>
                         </div>
                         <VoltarButton />
